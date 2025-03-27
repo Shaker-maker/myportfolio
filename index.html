@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alvin</title>
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <script src="matrix.js"></script>
+
+    <header class="header">
+        <a href="#" class="logo">{Portfolio}</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Alvin Wainaina</h1>
+            <h3>And I'm a <span class="pro-text"></span></h3>
+            <script>
+                var typed = new Typed(".pro-text", {
+                    strings: ["Ethical Hacker", "Cybersecurity Enthusiast", "Python Programmer", "Linux Administrator", "Bash Scripter", "Database Administrator", "Cryptographer"],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am an ethical hacker and cybersecurity enthusiast with a passion for securing systems and networks. My journey started with an interest in Linux, and I have since gained experience in penetration testing, networking, and database security.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item"><h3>2022</h3><p>Started learning cybersecurity and Linux.</p></div>
+            <div class="timeline-item"><h3>2023</h3><p>Completed Cisco Cybersecurity Certification.</p></div>
+            <div class="timeline-item"><h3>2024</h3><p>Started Cisco Ethical Hacker course.</p></div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill"><i class='bx bxl-python'></i><span>Python - 90%</span></div>
+            <div class="skill"><i class='bx bxl-linux'></i><span>Linux - 85%</span></div>
+            <div class="skill"><i class='bx bx-network-chart'></i><span>Networking - 75%</span></div>
+            <div class="skill"><i class='bx bxs-data'></i><span>MySQL - 70%</span></div>
+            <div class="skill"><i class='bx bx-terminal'></i><span>Bash Scripting - 50%</span></div>
+            <div class="skill"><i class='bx bx-lock'></i><span>Cryptography - 40%</span></div>
+            <div class="skill"><i class='bx bxl-django'></i><span>Django - 50%</span></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Learning Log</h3>
+                <p>A platform for users to log their learning journey.</p>
+                <a href="https://github.com/Shaker-maker/Learning-Log" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <article>
+                <h3>How I Got Into Cybersecurity</h3>
+                <p>My journey into cybersecurity started with an interest in Linux and ethical hacking...</p>
+                <a href="#">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:wainainaalvin76@gmail.com">wainainaalvin76@gmail.com</a></p>
+        <p>Twitter: <a href="https://twitter.com/Na_i_sh" target="_blank">@Na_i_sh</a></p>
+        <p>Instagram: <a href="https://instagram.com/s.h.a.k.er" target="_blank">@s.h.a.k.er</a></p>
+        
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
